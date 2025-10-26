@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="idea_notebook_root_menu"
+        name="Sổ tay Ý tưởng"
+        sequence="1"
+        action="idea_note_action"/>
+
+    <menuitem
+        id="idea_note_menu"
+        name="Menu ý tưởng"
+        parent="idea_notebook_root_menu"
+        sequence="1"/>
+
+    <menuitem
+        id="important_idea_note_menu"
+        name="Ý tưởng quan trọng"
+        parent="idea_note_menu"
+        action="important_idea_note_action"
+        sequence="2"/>
+
+    <menuitem
+        id="personal_idea_note_menu"
+        name="Ý tưởng cá nhân"
+        parent="idea_note_menu"
+        action="note_personal_action"
+        sequence="2"/>
+
+    <menuitem
+        id="work_idea_note_menu"
+        name="Ý tưởng công việc"
+        parent="idea_note_menu"
+        action="note_work_action"
+        sequence="2"/>
+         
+    <menuitem
+        id="project_idea_note_menu"
+        name="Ý tưởng dự án"
+        parent="idea_note_menu"
+        action="note_project_action"
+        sequence="2"/>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="module_category_idea_notebook" model="ir.module.category">
+            <field name="name">Sổ tay Ý tưởng</field>
+            <field name="description">Phân quyền cho ứng dụng Sổ tay Ý tưởng</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="group_idea_viewer" model="res.groups">
+            <field name="name">Viewer</field>
+            <field name="category_id" ref="module_category_idea_notebook"/>
+        </record>
+
+        <record id="group_idea_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="module_category_idea_notebook"/>
+            <field name="implied_ids" eval="[(4, ref('group_idea_viewer'))]"/>
+        </record>
+
+        <record id="group_idea_admin" model="res.groups">
+            <field name="name">Admin</field>
+            <field name="category_id" ref="module_category_idea_notebook"/>
+            <field name="implied_ids" eval="[(4, ref('group_idea_user'))]"/>
+        </record>
+    </data>
+</odoo>

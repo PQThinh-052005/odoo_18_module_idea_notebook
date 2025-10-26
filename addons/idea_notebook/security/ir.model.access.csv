@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_idea_note_viewer,idea.note.viewer,model_idea_note,idea_notebook.group_idea_viewer,1,0,0,0
+access_idea_note_user,idea.note.user,model_idea_note,idea_notebook.group_idea_user,0,1,1,0
+access_idea_note_admin,idea.note.admin,model_idea_note,idea_notebook.group_idea_admin,0,0,0,1

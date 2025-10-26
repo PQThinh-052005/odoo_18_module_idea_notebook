@@ -1,0 +1,15 @@
+.content {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    font-style: italic;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    font-weight: bold;
+}
